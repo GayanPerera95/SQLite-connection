@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+  <TextView
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/titleText"
+      android:textSize="24dp"
+      android:text="Person Details"
+      android:layout_marginTop="20dp"/>
+  <EditText
+      android:id="@+id/name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/titleText"
+      android:textSize="24dp"
+      android:hint="Enter Name"
+    />
+
+  <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/dob"
+      android:layout_below="@+id/name"
+      android:textSize="24dp"
+      android:hint="Enter DOB"
+      />
+
+  <EditText
+      android:id="@+id/contactinfo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/dob"
+      android:textSize="24dp"
+      android:hint="Enter Contact Info"
+      />
+
+  <LinearLayout
+      android:layout_width="391dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="250dp"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="insert" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="view" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="391dp"
+      android:layout_height="90dp"
+      android:gravity="center"
+      android:layout_marginTop="320dp"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/delete"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="delete" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="update"
+        />
+
+
+    />
+  </LinearLayout>
+
+</RelativeLayout>
